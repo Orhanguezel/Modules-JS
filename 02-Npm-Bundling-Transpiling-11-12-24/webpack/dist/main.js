@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("addResult: ",3);const l=2*3;console.log("multiplyResult: ",l)})();
