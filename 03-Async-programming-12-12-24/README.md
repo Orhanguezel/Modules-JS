@@ -24,6 +24,6 @@
 
 ### Tasks :
 
-- []()
+- [spa-asynchronous-programming-promises](https://classroom.github.com/a/7I-NDXKU)
 
-- []()
+- [spa-asynchronous-programming-fetch](https://classroom.github.com/a/87KUVc8e)
