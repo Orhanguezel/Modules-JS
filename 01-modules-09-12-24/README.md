@@ -1,41 +1,29 @@
-# JS-Modules / Montag 10.12.24
+# Async Programming / Donnerstag 12.12.24
 
-## LernZiele :
+## Lernziele :
 
-1. Modules (`import`, `export`).
-2. Named exports, default exports, namespace imports, default import, neben wirkung import
-3. Benutzen **modules** im `Browser` und `Node.js`
-4. Vorteile von `Scope-Isolierung` und `Kapselung`.
-5. Der Unterschied zwischen `require` und `import`
+1. Was ist `Synchronous` Code (Blocking) ?
 
-- IIFE
+2. Was ist `Asynchronous` Code (Non-Blocking) ?
 
-```js
-// users.js Datei
-(function () {
-  let counter = 0;
-  const users = [];
+3. Was ist der Unterschied zwischen `async` und `defer` attributes im **Script tag**?
 
-  window.addUser = (user) => {
-    users.push(user);
-    counter++;
-    console.log(`${counter} users added!`);
-  };
+4. Was ist `Promise` in JS und warum wird benutzt ?
 
-  console.log("users initialized!");
-})();
-```
+5. Was ist `fetch` in JS ?
 
 ### Resources :
 
-- [MDN JS-Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [Asyncronous and promises MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
 
-- [Modules-video](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
+- [async and defer attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 
-- [ES6-Modules](https://www.youtube.com/watch?v=cRHQNNcYf6s)
+- [Promises MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
-### Task :
+- [Fetch W3school](https://www.w3schools.com/jsref/api_fetch.asp)
 
-- [spa-modules-basics](https://classroom.github.com/a/ixhidgR7)
+### Tasks :
 
-- [spa-modules-calculator](https://classroom.github.com/a/q6z94oIy)
+- [spa-asynchronous-programming-promises](https://classroom.github.com/a/7I-NDXKU)
+
+- [spa-asynchronous-programming-fetch](https://classroom.github.com/a/87KUVc8e)
