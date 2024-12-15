@@ -138,8 +138,6 @@ Tüm depolanan verileri temizler.
 localStorage.clear();
 ```
 
----
-
 ### **Örnek Senaryo**
 
 Bir kullanıcının temasını kaydedip geri yükleyen bir uygulama:
