@@ -4,7 +4,15 @@
 
 1. Was ist `JSON` ?
 
+- Java Script Object Notation
+
+- Ein Dateiformat basierend auf JavaScript-Datentypen
+- Wird oft für Datenspeicherung und Datentransfer verwendet
+- Im Grunde wie JavaScript, aber doch ein bisschen anders
+
 2. Welche `Methode` hat `JSON` und was ist ihre functionen ?
+
+- JSON.stringify(), JSON.parse()
 
 3. Was ist `API` ?
 
