@@ -1,3 +1,4 @@
+/*
 let check = false;
 
 function createPromise(){
@@ -21,4 +22,34 @@ createPromise()
     console.log("Promise islemi bitti.");
 }
 )
+*/
+
+function readStudents() {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        
+        xhr.addEventListener("readystatechange", () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    try {
+                        resolve(JSON.parse(xhr.responseText)); // JSON'u çözümle ve çöz
+                    } catch (error) {
+                        reject("JSON parse hatası: " + error.message);
+                    }
+                } else {
+                    reject(`Hata: HTTP Durum Kodu ${xhr.status}`);
+                }
+            }
+        });
+
+        // Hatalı `try-catch` kaldırıldı
+        xhr.open("GET", "students.json", true);
+        xhr.send();
+    });
+}
+
+// Promise'i Kullanma
+readStudents()
+    .then(students => console.log("Öğrenciler:", students))
+    .catch(error => console.error("Hata:", error));
 
